@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {FormControl} from '@angular/forms';
+import {faBars, faBookDead, faHouseDamage, faShoePrints, faTimes} from '@fortawesome/free-solid-svg-icons';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'the-dashboard';
+  mode = new FormControl('over');
+  faHouseDamage = faHouseDamage;
+  faCross = faTimes;
+  faBars = faBars;
+  faBookDead = faBookDead;
+  faShoePrints = faShoePrints;
 }
