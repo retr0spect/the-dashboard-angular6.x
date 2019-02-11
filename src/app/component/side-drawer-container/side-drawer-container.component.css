@@ -1,0 +1,30 @@
+.example-container {
+  background: rgba(51,51,51,0.7);
+  width: 100%;
+  height: 100vh;
+}
+
+.example-sidenav-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.example-sidenav {
+  padding: 20px;
+}
+
+.header {
+  height: 74px;
+  background: darksalmon;
+}
+
+.footer {
+  height: 60px;
+  background: darksalmon;
+  width: 100%;
+}
+
+.header-logo {
+  margin-left: 80px;
+}

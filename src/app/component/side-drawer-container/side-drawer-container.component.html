@@ -1,0 +1,26 @@
+<div>
+
+  <div class="header">
+    <fa-icon class="fa-2x sidenav-home" [icon]="faBars" (click)="drawer.toggle()"></fa-icon>
+    <fa-icon class="fa-4x header-logo" [icon]="faBookDead"></fa-icon>
+  </div>
+
+  <mat-drawer-container class="example-container">
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+      <p>Auto-resizing sidenav</p>
+    </mat-drawer>
+
+    <!--<div class="example-sidenav-content">
+      <button type="button" mat-button (click)="drawer.toggle()">
+        Toggle sidenav
+      </button>
+    </div>-->
+
+  </mat-drawer-container>
+
+  <footer class="footer">
+    <fa-icon class="fa-2x sidenav-home" [icon]="faShoePrints"></fa-icon>
+  </footer>
+
+</div>
+
