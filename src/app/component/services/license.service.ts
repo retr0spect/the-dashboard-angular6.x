@@ -15,6 +15,9 @@ export class LicenseService {
       new License('Key', 'ABC-CDE-EFGH', true),
       new License('Cloud', 'ABC-CDE-EFGH', true),
       new License('Cloud', 'ABC-CDE-EFGH', true),
+      new License('Cloud', 'ABC-CDE-EFGH', true),
+      new License('FBR', 'ABC-CDE-EFGH', true),
+      new License('FBR', 'ABC-CDE-EFGH', true),
       new License('FBR', 'ABC-CDE-EFGH', true),
       new License('FBR', 'ABC-CDE-EFGH', true)
     ];
