@@ -21,6 +21,8 @@ import { KeyManagementComponent } from './component/key-management/key-managemen
 import {ChartsModule} from 'ng2-charts';
 import { BarchartComponent } from './component/barchart/barchart.component';
 import { LinechartComponent } from './component/linechart/linechart.component';
+import {CustomReuseStrategy} from './CustomReuseStrategy';
+import {RouteReuseStrategy} from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -48,7 +50,7 @@ import { LinechartComponent } from './component/linechart/linechart.component';
     AppRoutingModule,
     ChartsModule
   ],
-  providers: [],
+  providers: [{provide: RouteReuseStrategy, useClass: CustomReuseStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule {

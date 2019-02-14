@@ -37,6 +37,7 @@ export class BarchartComponent implements OnInit {
   public barChartData: any[] = [];
 
   ngOnInit(): void {
+    console.log('ngOnInit BarchartComponent');
     this.licenses = this.licenseService.getLicenses();
     this.getLicenseCount();
     this.barChartLabels = Array.from(this.licenseCount.keys());

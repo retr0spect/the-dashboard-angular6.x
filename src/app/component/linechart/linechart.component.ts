@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './linechart.component.html',
   styleUrls: ['./linechart.component.css']
 })
-export class LinechartComponent {
+export class LinechartComponent implements OnInit {
 
   // lineChart
   public lineChartData: Array<any> = [
@@ -64,6 +64,10 @@ export class LinechartComponent {
 
   public chartHovered(e: any): void {
     console.log(e);
+  }
+
+  ngOnInit(): void {
+    console.log('ngOnInit LinechartComponent');
   }
 
 }

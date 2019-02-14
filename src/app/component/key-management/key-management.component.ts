@@ -10,6 +10,7 @@ export class KeyManagementComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log('ngOnInit KeyManagementComponent');
   }
 
 }
